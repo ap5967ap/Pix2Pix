@@ -49,7 +49,7 @@ The Pix2Pix framework consists of two key components:
   - Captures details such as roads, buildings, and water bodies.
 
 ### Example Outputs
-| Input (Satellite Map) | Target (Ground Truth Street Map) |
+| Input (Satellite Map) | Output (Predicted Street Map) |
 |-------------------------------|-----------------------------------|
 | ![Input](input.png)  | ![Output](output.png)         |
 
