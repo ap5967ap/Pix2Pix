@@ -30,7 +30,7 @@ The Pix2Pix framework consists of two key components:
 ### Discriminator
 - **Type:** PatchGAN.
 - **Architecture:**
-  - Evaluates patches of size 70x70 pixels.
+  - Evaluates patches of size 30x30 pixels.
   - Outputs a matrix of probabilities indicating whether each patch is real or fake.
 
 ## Training
@@ -38,7 +38,7 @@ The Pix2Pix framework consists of two key components:
   - Generator Loss: Combination of L1 loss (to maintain pixel-level similarity) and adversarial loss.
   - Discriminator Loss: Binary cross-entropy loss for real vs. fake classification.
 - **Optimization:** Adam optimizer with learning rate 2e-4 and β1 = 0.5.
-- **Batch Size:** 1
+- **Batch Size:** 16
 - **Epochs:** 200
 - **Training Procedure:**
   - Alternate updates to generator and discriminator.
